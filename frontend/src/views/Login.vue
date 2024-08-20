@@ -10,8 +10,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import authServices from "../services/authServices";
-import { useRouter } from "vue-router";
+
 import loginModel from "../models/loginModel";
 import { useAuthStore } from "../stores/authStore";
 
