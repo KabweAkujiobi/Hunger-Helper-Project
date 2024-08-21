@@ -4,11 +4,11 @@ The Hunger Helper Project is a web-based system dedicated to reducing food short
 
 # Table of Contents
 
-- [Features](##Features)
-- [Requirements](##Requirements)
-- [Usage](##Usage)
-- [License](##License)
-- [Contact](##Contact)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
