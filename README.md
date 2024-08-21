@@ -4,11 +4,11 @@ The Hunger Helper Project is a web-based system dedicated to reducing food short
 
 # Table of Contents
 
-- [Features] (# Features)
-- [Requirements] (# Requirements)
-- [Usage] (# Usage)
-- [License] (# License)
-- [Contact] (# Contact)
+- [Features](## Features)
+- [Requirements](## Requirements)
+- [Usage](## Usage)
+- [License](## License)
+- [Contact](## Contact)
 
 ## Features
 
@@ -38,7 +38,7 @@ Before using the Hunger Helper System, ensure you have the following:
 
 For any inquiries, feel to reach out to :
  
-Email : [Kabwe Oluchi Akujiobi] (mailto:kabweolu@gmail.com) [Sethabile Nokuphiwa Mbatha] (mailto:snmbatha1998@gmail.com)  [Mbali Monica Makhubo] (mailto:mbali.makhubo25@gmail.com)
+Email : [Kabwe Oluchi Akujiobi](mailto:kabweolu@gmail.com)  [Sethabile Nokuphiwa Mbatha](mailto:snmbatha1998@gmail.com)  [Mbali Monica Makhubo](mailto:mbali.makhubo25@gmail.com)
 GitHub :Kabwe Oluchi Akujiobi [KabweAkujiobi](https://github.com/KabweAkujiobi)
         Sethabile Nokuphiwa Mbatha [Sethabile](https://github.com/Sethabile)
         Mbali Monica Makhubo [mbalimakhubo](https://github.com/mbalimakhubo)
