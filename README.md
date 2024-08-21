@@ -4,11 +4,11 @@ The Hunger Helper Project is a web-based system dedicated to reducing food short
 
 # Table of Contents
 
-- [Features](## Features)
-- [Requirements](## Requirements)
-- [Usage](## Usage)
-- [License](## License)
-- [Contact](## Contact)
+- [Features](##Features)
+- [Requirements](##Requirements)
+- [Usage](##Usage)
+- [License](##License)
+- [Contact](##Contact)
 
 ## Features
 
@@ -27,9 +27,13 @@ Before using the Hunger Helper System, ensure you have the following:
 ## Usage
 
 1.Sign Up: Create an account on the Zero Hunger platform.
+
 2.Login: Log in with your credentials as either a food supplier or an NGO.
+
 3.Browse Food Availability: NGOs can browse real-time listings of available excess food.
+
 4.Claim Food: NGOs can claim the food, which triggers notifications to the food supplier.
+
 5.Manage Donations: Food suppliers can manage their food donations and track which NGOs have claimed their offerings.
 
 ## License
