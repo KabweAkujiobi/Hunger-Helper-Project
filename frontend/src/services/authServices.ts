@@ -4,11 +4,11 @@ import loginModel from "../models/loginModel";
 
 class authServices {
     async registerUser(data: userModel){
-        return await axiosInstance.post<userModel>("/auth/register", data);
+        return await axiosInstance.post("/auth/register", data);
     }
 
     async loginUser(data: loginModel){
-        return await axiosInstance.post<loginModel>("/auth/login", data);
+        return await axiosInstance.post("/auth/login", data);
     }
 }
 

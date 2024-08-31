@@ -17,16 +17,27 @@ const router = createRouter({
 });
 
 router.beforeEach((to, _from, next) => {
-    const authStore = useAuthStore();
-    if (to.matched.some(record => record.meta.requiresAuth)) {
-      if (!authStore.isAuthenticated) {
-        next('/login');
+  const authStore = useAuthStore();
+
+  // Redirect authenticated users away from login/register
+  if (to.matched.some(record => record.meta.requiresGuest)) {
+      if (authStore.isAuthenticated) {
+          next('/dashboard');
       } else {
-        next();
+          next();
       }
-    } else {
+  }
+
+  // Handle routes that require authentication
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+      if (!authStore.isAuthenticated) {
+          next('/login');
+      } else {
+          next();
+      }
+  } else {
       next();
-    }
-  });
+  }
+});
 
 export default router;

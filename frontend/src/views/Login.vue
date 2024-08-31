@@ -10,8 +10,6 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import authServices from "../services/authServices";
-import { useRouter } from "vue-router";
 import loginModel from "../models/loginModel";
 import { useAuthStore } from "../stores/authStore";
 
@@ -33,12 +31,10 @@ export default defineComponent({
     async login() {
         const credentials = {... this.userloginCredentials};
         this.authStore.login(credentials);
-        //const response = await authServices.loginUser(credentials);
-        //console.log('User logged in:', response.data);
 
-        //Todo possibility
         // Save the token to localStorage(optional)
-        // localStorage.setItem('token', response.data.token);
+        localStorage.setItem('token', Response.data.token);
+        localStorage.setItem();
     }
   }
 });

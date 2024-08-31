@@ -40,7 +40,6 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import authServices from "../services/authServices";
 import userModel  from "../models/userModel";
 import beneficiaryTypeEnum from "../enums/beneficiaryTypeEnum";
 import donationRoleEnum from "../enums/donationRoleEnum";
