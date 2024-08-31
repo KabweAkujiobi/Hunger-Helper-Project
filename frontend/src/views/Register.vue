@@ -1,41 +1,79 @@
 <template>
-    <v-container>
-        <h1>Register</h1>
+    <v-container class="d-flex pa-50">
+      <img :width="80" aspect-ratio="16/9" src="../assets/zerohungerlogo.png"/>
+      <h2 class="text-h4 align-self-center">Zero Hunger</h2>
+    </v-container>
+    <v-card class="d-flex mx-auto">
+      <v-card-item class="w-50">
+        <img src="../assets/hungry_kids.png"/>
+      </v-card-item>
+        <v-form @submit.prevent="register"  class="w-50 my-auto mx-10">
+          <v-window v-model="step">
+            <v-window-item :value="1">
 
-        <v-form @submit.prevent="register">
+          <h2 class="text-h4 align-self-center">Registration</h2>
+         
       <v-select
         v-model="user.beneficiaryType"
+        variant="outlined"
         label="Beneficiary Type"
         :items="beneficiaryTypes"
         item-title="text"
         item-value="value"
         required
       ></v-select>
-      <v-text-field v-model="user.organisationName" label="Organisation Name"></v-text-field>
+      <v-text-field v-model="user.organisationName" label="Organisation Name" variant="outlined"></v-text-field>
       <v-select
         v-model="user.organisationType"
+        variant="outlined"
         label="Organisation Type"
         :items="organisationTypes"
         item-title="text"
         item-value="value"
         required
       ></v-select>
-      <v-text-field v-model="user.firstName" label="First Name" required></v-text-field>
-      <v-text-field v-model="user.lastName" label="Last Name" required></v-text-field>
+      <v-text-field v-model="user.firstName" label="First Name" variant="outlined" required></v-text-field>
+      <v-text-field v-model="user.lastName" label="Last Name" variant="outlined" required></v-text-field>
+    </v-window-item>
+
+    <v-window-item :value="2">
       <v-select
         v-model="user.donationRole"
+        variant="outlined"
         label="Donation Role"
         :items="donationRoles"
         item-title="text"
         item-value="value"
         required
       ></v-select>
-      <v-text-field v-model.number="user.contactNumber" label="Contact Number" required></v-text-field>
-      <v-text-field v-model="user.email" label="Email" required></v-text-field>
-      <v-text-field v-model="user.password" type="string" label="Password" required></v-text-field>
+      <v-text-field v-model.number="user.contactNumber" label="Contact Number" variant="outlined" required></v-text-field>
+      <v-text-field v-model="user.email" label="Email" variant="outlined" required></v-text-field>
+      <v-text-field v-model="user.password" type="string" label="Password" variant="outlined" required></v-text-field>
+    
       <v-btn type="submit" color="primary">Register</v-btn>
+    </v-window-item>
+    </v-window>
+    <v-card-actions>
+      <v-btn
+        v-if="step > 1"
+        variant="text"
+        @click="step--"
+      >
+        Back
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn
+        v-if="step <= 3"
+        color="primary"
+        variant="flat"
+        @click="step++"
+      >
+        Next
+      </v-btn>
+    </v-card-actions>
     </v-form>
-    </v-container>
+   
+    </v-card>
 </template>
 
 <script lang="ts">

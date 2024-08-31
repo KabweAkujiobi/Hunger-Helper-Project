@@ -8,7 +8,7 @@ class authServices {
     }
 
     async loginUser(data: loginModel){
-        return await axiosInstance.post<loginModel>("/auth/login", data);
+        return await axiosInstance.post("/auth/login", data);
     }
 }
 

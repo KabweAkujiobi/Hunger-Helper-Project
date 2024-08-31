@@ -12,7 +12,6 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <NavBar/>
     <router-view></router-view>
   </div>
 </template>
