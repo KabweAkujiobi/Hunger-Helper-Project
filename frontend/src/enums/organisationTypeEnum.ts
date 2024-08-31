@@ -1,5 +1,5 @@
 enum organisationTypeEnum {
-    none = 'none',
+    other = 'other',
     foodBank = 'foodBank',
     charity = 'charity',
     farm = 'farm',
