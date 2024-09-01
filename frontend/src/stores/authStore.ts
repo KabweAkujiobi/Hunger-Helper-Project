@@ -10,7 +10,7 @@ export const useAuthStore = defineStore('authStore', {
   state: (): authStateModel => ({
     isAuthenticated: localStorage.getItem('isAuthenticated') === 'true',
     token: localStorage.getItem('token') || '',
-    userRole: (localStorage.getItem('userRole') as donationRoleEnum) || donationRoleEnum.donatee, // Load userRole from localStorage
+    userRole: (localStorage.getItem('userRole')as donationRoleEnum) || donationRoleEnum.donatee, // Load userRole from localStorage
   }),
   actions: {
     async login(loginDetails: loginModel) {
